@@ -1,3 +1,36 @@
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .slide-in {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+span{
+    font-size:30px;cursor:pointer
+}
+img{
+    margin-top: 0px; width: 100%;
+}
+
 .cards_impressum{
     padding: 20px;
     width: 100%;
