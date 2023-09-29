@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="ThePhoenixPixel, minecraft, informatik, phoenix, phoenixcraft, codergames">
+    <meta name="description" content="Ne kleine aber feine Startseite">
+    <meta name="author" content="ThePhoenixPixel">
+    <link rel="shortcut icon" href="Projekt.png">
+
+    <title>ThePhoenixPixel</title>
+    <style>
+      /* CSS-Effekte */
+      .fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .slide-in {
+        animation: slideIn 1s ease-in-out;
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+</head>
+<body style="background-color: #1a8d1a;">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Startseite</a>
+    <a href="#">Impressum</a>
+  </div>
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+  </div>
+    <img src="Banner.png" style="margin-top: 0px; width: 100%;">
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 60px;">
+      <div class="card show fade-in">
+        <div class="header">
+          <div class="about-me"></div>
+          <div>
+            <p class="about-me" style="font-size: 25px; text-align: center;"><b>Über-mich</b></p>
+          </div>
+        </div>
+        <p class="message">
+          - Was kann ich ???
+        </p>
+        <p class="message">
+          - Löten und Minecarft Server aufsetzten
+        </p>
+        <p class="message">
+          - Was lerne ich ???
+        </p>
+        <p class="message">
+          - Java, Html, Css und noch was aus der Informatik
+        </p>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 60px;">
+      <div class="card show fade-in">
+        <div class="header">
+          <div class="image"></div>
+          <div>
+            <p class="name">CoderGames</p>
+          </div>
+        </div>
+        <p class="message">
+          CoderGames leite ich mit Kaski zusammen. <br>
+          Dort programieren wir zb gerade ein Wimelbild.
+        </p>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 60px;">
+      <div class="card show fade-in">
+        <div class="header" id="phoenixcraft">
+          <div class="image"></div>
+          <div>
+            <p class="name">Phoenixcraft</p>
+          </div>
+        </div>
+        <p class="message">
+          Phoenixcraft ist ein Unterprojekt von CoderGames. <br>
+          ?????? Was ist das aber ?????? <br>
+          "Trommel wirbel" <br>
+          Es ist ein Minecarft ServerNetzwerk
+        </p>
+      </div>
+    </div>
+    <div class="footer fade-in" style="margin-top: 110px;">
+      <br>
+      <a href="impressum.html">Impressum</a> 
+      &ensp;
+      |
+      &ensp;
+      <a href="index.html">Startseite</a>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      // JavaScript-Effekte
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.classList.add('slide-in');
+          }, index * 200);
+        });
+      });
+    </script>
+</body>
+</html>

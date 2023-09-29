@@ -1,0 +1,226 @@
+.cards_impressum{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #1a8d1a;
+  } 
+  .cards_impressum .card_imp{
+    padding: 15px 25px;
+    width: 99%;
+    justify-content: center;
+  }
+  .cards_impressum .card_inimp{
+    background:  #4da64d;
+    border-radius: 5px;
+    padding: 35px 20px;
+    min-width: 225px;
+    min-height: 715px;
+    width: 100%;
+  }
+  .cards_impressum .card_imp img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+  .cards_impressum .card_imp .title{
+    color: white;
+    padding-left: 30px;
+    font-size: 35px;
+  }
+  .cards_wrap .card_imp .subtitle{
+    color: #b6c0c2;
+    font-size: 12px;
+    font-weight: 100;
+    margin: 5px 0 10px;
+  }
+  .cards_impressum .card_imp p,li.ul,h1,h2,h3,h4,a,h5,strong{
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 7px;
+    color: white;
+    padding-left: 30px;
+  }
+  
+.footer{
+    text-align: center;   
+    background-color:  #1a8d1a;
+    color:#d6d6d6;    
+    width: 100%;
+    margin: 0 auto;
+    position: relative; 
+    height: 70px;
+  }
+  .footer a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    cursor: pointer; 
+  } 
+
+
+
+  .card {
+    color: white;
+    background-color:#4da64d;;
+    padding: 2rem;
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .card.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  
+  .header {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+  }
+  
+  .header .image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    background-image: url("Projekt.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  #phoenixcraft .image{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    background-image: url("icon1.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  
+
+  
+  .name {
+    margin-top: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  
+  .message {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+  }
+  
+.image-text-section {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+  background-color:#333;
+  width: 80%;
+
+} 
+.image-text-section img {
+  width: 200px;
+  margin-right: 20px;
+}
+.image-text-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .cards_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  img[src="Banner.png"] {
+    width: 100%;
+    height: auto;
+  }
+  .message {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 580px) {
+  .cards_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 40%;
+  }
+
+  img[src="Banner.png"] {
+    width: 100%;
+    height: auto;
+  }
+  .message {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.sidenav {
+  height: 100%; 
+  width: 0;
+  position: fixed; 
+  z-index: 1;
+  top: 0; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
